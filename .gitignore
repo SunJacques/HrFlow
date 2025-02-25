@@ -1,0 +1,7 @@
+*.npy
+*pycache*
+.vscode
+resources
+*.db
+*.DS_Store
+.env
