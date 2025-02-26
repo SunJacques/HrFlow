@@ -1,6 +1,6 @@
 import optuna
 import src.base_pipeline as bp
-import src.GD_bias as gd
+import SGD_bias as gd
 import src.dataloader as dl
 import numpy as np
 from joblib import Parallel, delayed

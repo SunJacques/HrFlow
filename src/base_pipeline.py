@@ -25,10 +25,10 @@ class CollaborativePipeline:
         self.method = method
         self.ranking_method = ranking_method
         
-    def run(self, X_train, y_train, X_test):
+    def run(self, X_train, y_train):
         self.method.fit(X_train, y_train)
         interations = self.method.predict(X_train)
-        
+        self.ranking_method.fit(interations, y_train)
     
     def evaluate(self, X, y):
         y_pred = self.predict(X)
